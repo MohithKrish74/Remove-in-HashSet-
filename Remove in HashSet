@@ -1,0 +1,35 @@
+package com.company;
+
+import com.sun.jdi.Value;
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in=new Scanner(System.in);
+        HashSet<Integer>set=new HashSet<Integer>();
+        System.out.print("Enter the length of the set: ");
+        int length=in.nextInt();
+        System.out.println("Enter the elements: ");
+        for(int i=0;i<length;i++)
+        {
+            set.add(in.nextInt());
+        }
+        System.out.println("The set is "+set);
+        System.out.print("Enter the element to remove: ");
+        int remove_element=in.nextInt();
+        set.remove(remove_element);
+        System.out.println("The set after removing "+remove_element+" is "+set);
+
+    }
+
+}
+
+
+
+
+
+
+
